@@ -56,7 +56,7 @@ open http://localhost:8000
 Установление зависимостей
 
 
->[!note] for mac
+>[!note] for ur python
 > ```bash
 > python3 -m venv .venv && source .venv/bin/activate
 > python -m pip install --upgrade pip
@@ -325,3 +325,4 @@ MIT License - см. файл LICENSE для подробностей
 **Построено с FastAPI, Pydantic, Ollama и современными веб-технологиями** 🚀  
 
 (*) Следите за апдейтах
+
