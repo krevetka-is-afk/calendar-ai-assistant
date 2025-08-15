@@ -1,0 +1,34 @@
+# FastAPI and server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Calendar processing
+icalendar==5.0.11
+python-dateutil==2.8.2
+pytz==2023.3
+
+# HTTP client for Ollama
+requests==2.31.0
+httpx==0.25.2
+
+# Timezone support
+tzdata==2023.3
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+
+# Development
+python-multipart==0.0.6  # For file uploads
+python-dotenv==1.0.0
+
+# Optional: Performance
+ujson==5.8.0
+orjson==3.9.10
+
+# Database
+SQLAlchemy==2.0.23
+psycopg2-binary==2.9.9

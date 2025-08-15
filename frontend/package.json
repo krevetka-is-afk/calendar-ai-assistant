@@ -1,0 +1,31 @@
+{
+  "name": "calendar-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "shx mkdir -p ../app/static/assets ../app/static",
+    "build-css": "tailwindcss -i ./src/styles.css -o ../app/static/assets/styles.css --minify",
+    "build-js": "esbuild src/main.tsx --bundle --minify --sourcemap --loader:.ts=ts --loader:.tsx=tsx --outfile=../app/static/assets/index.js",
+    "copy-html": "shx cp ./index.html ../app/static/index.html",
+    "copy-favicon": "shx cp ./favicon.ico ../app/static/favicon.ico",
+    "build": "npm run prebuild && npm run build-css && npm run build-js && npm run copy-html && npm run copy-favicon",
+
+    "dev": "npm-run-all --parallel dev:*",
+    "dev:css": "tailwindcss -i ./src/styles.css -o ../app/static/assets/styles.css --watch",
+    "dev:js": "esbuild src/main.tsx --bundle --sourcemap --loader:.ts=ts --loader:.tsx=tsx --outfile=../app/static/assets/index.js --watch",
+
+    "update-browserslist": "npx update-browserslist-db@latest --update-db",
+    "clean": "shx rm -rf ../app/static/assets ../app/static/index.html ../app/static/favicon.ico"
+  },
+  "dependencies": {
+    "lucide-react": "^0.360.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.3",
+    "npm-run-all": "^4.1.5",
+    "shx": "^0.3.4",
+    "tailwindcss": "^3.4.3"
+  }
+}

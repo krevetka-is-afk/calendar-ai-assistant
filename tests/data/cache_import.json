@@ -1,0 +1,58 @@
+{
+  "54b66355159ee3d1ad10b34d49b2515d3bab2c90795198a9d00d2ce6f65c5786": {
+    "input_hash": "54b66355159ee3d1ad10b34d49b2515d3bab2c90795198a9d00d2ce6f65c5786",
+    "input_data": {
+      "ics_content": null,
+      "events": [
+        {
+          "calendar": "cal",
+          "start": "2025-08-12T00:00:00+03:00",
+          "end": "2025-08-12T01:00:00+03:00",
+          "summary": "inside",
+          "description": "",
+          "attendees": [],
+          "rrule": null,
+          "all_day": false
+        },
+        {
+          "calendar": "cal",
+          "start": "2025-08-10T00:00:00+03:00",
+          "end": "2025-08-10T01:00:00+03:00",
+          "summary": "before",
+          "description": "",
+          "attendees": [],
+          "rrule": null,
+          "all_day": false
+        }
+      ],
+      "timezone": "Europe/Moscow",
+      "expand_recurring": false,
+      "horizon_days": 30,
+      "days_limit": 0
+    },
+    "result_data": {
+      "tz": "Europe/Moscow",
+      "generated_at": "2025-08-14T22:45:07.608011+03:00",
+      "events": [
+        {
+          "calendar": "cal",
+          "start": "2025-08-12T00:00:00+03:00",
+          "end": "2025-08-12T01:00:00+03:00",
+          "summary": "inside",
+          "description": "",
+          "attendees": [],
+          "event_type": null,
+          "priority_type": null
+        }
+      ],
+      "stats": {
+        "total_imported": 1,
+        "recurring_expanded": 0,
+        "all_day_events": 0,
+        "unique_calendars": 1
+      }
+    },
+    "created_at": "2025-08-14T19:45:07.608854",
+    "expires_at": "2025-08-16T19:45:07.608816"
+  }
+}
