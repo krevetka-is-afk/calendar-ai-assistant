@@ -325,4 +325,7 @@ MIT License - см. файл LICENSE для подробностей
 
 (*) Следите за апдейтах
 
+[Ссылка на проект](https://github.com/krevetka-is-afk/calendar-ai-assistant.git)
+
+
 
