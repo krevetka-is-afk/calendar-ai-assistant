@@ -53,14 +53,39 @@ open http://localhost:8000
 ```
 
 ### 2. Ручная установка
+Установление зависимостей
+
+
+>[!note] for mac
+> ```bash
+> python3 -m venv .venv && source .venv/bin/activate    
+python -m pip install --upgrade pip                  
+pip install -r requirements.txt
+> ```
+
+
 
 ```bash
 # Установите зависимости
+python -m venv .venv && source .venv/bin/activate
+python -m pip install --upgrade pip                     
 pip install -r requirements.txt
+```
 
-# Запустите Ollama (для ИИ-функций)
+Запустите Ollama (для ИИ-функций)
+```bash
 ollama serve
 ollama pull qwen3:8b
+```
+
+
+
+Сборка фронт-энда и запуск приложения
+```bash
+
+alembic upgrade head
+cd frontend && npm install && npm run build && cd ..
+
 
 # Запустите приложение
 python -m app.main
